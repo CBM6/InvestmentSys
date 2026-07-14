@@ -3,6 +3,7 @@ from PySide6.QtWidgets import QVBoxLayout, QLineEdit, QTextEdit
 from PySide6.QtWidgets import QPushButton, QLabel, QApplication
 from investment.openai_report import generateAiReport
 from PySide6.QtCore import QObject, QThread, Signal, Slot
+from investment.source_retrieval import choose_source_types,retrieve_sources
 
 class Reportworker(QObject):
     #Signal is how the worker talks back to the UI Thread
@@ -23,8 +24,14 @@ class Reportworker(QObject):
     @Slot()
     def run(self):
         try:
+            #Decide which source types we choosed
+            source_types = choose_source_types(self.prompts_input)
+
+            #retrive mock sources in the worker thread
+            #Future network retrival will stay here.
+            sources = retrieve_sources(self.prompt_input, self.prompts_input, source_types)
             #This runs in the background thread, so the UI will not freeze
-            report = generateAiReport(self.prompt_input, self.prompts_input, self.risk, self.currentPosition,self.cash_display)
+            report = generateAiReport(self.prompt_input, self.prompts_input, self.risk, self.currentPosition,self.cash_display,sources)
             self.reportReady.emit(report)
         except Exception as error:
             #if error happened, sned the error to ui
