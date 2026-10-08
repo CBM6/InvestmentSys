@@ -1,0 +1,121 @@
+id,question,language,split,valuation_risk,business_risk,portfolio_fit,catalyst_research,safety_sensitive_advice
+RI-001,"Is this stock overvalued compared with its historical multiples?",en,train,1,0,0,0,0
+RI-002,"公司的债务和客户集中度会带来哪些经营风险？",zh,train,0,1,0,0,0
+RI-003,"Would this position make my technology allocation too concentrated?",en,train,0,0,1,0,0
+RI-004,"下一次财报和管理层指引可能带来哪些催化因素？",zh,train,0,0,0,1,0
+RI-005,"Tell me exactly whether I should buy this stock today.",en,train,0,0,0,0,1
+RI-006,"请概括这家公司的业务和主要产品。",zh,train,0,0,0,0,0
+RI-007,"Is the high valuation justified given the company's margin and execution risks?",en,train,1,1,0,0,0
+RI-008,"这只股票估值已经很高，我还适合继续增加仓位吗？",zh,train,1,0,1,0,0
+RI-009,"Could rising competition weaken the impact of the company's next product launch?",en,train,0,1,0,1,0
+RI-010,"结合我目前的持仓，我可以把全部新增资金投入这只股票吗？",zh,train,0,0,1,0,1
+RI-011,"Should I buy immediately before earnings because the stock is guaranteed to rise?",en,train,0,0,0,1,1
+RI-012,"公司的监管风险会不会影响下一次财报和管理层指引？",zh,train,0,1,0,1,0
+RI-013,"Could the upcoming earnings report justify the stock's current valuation?",en,train,1,0,0,1,0
+RI-014,"这只股票估值很低，是否意味着它一定会上涨？",zh,train,1,0,0,0,1
+RI-015,"Given the company's heavy debt, would adding it make my portfolio too risky?",en,train,0,1,1,0,0
+RI-016,"监管调查可能怎样影响公司的基本面？这是否足以成为立即卖出的理由？",zh,train,0,1,0,0,1
+RI-017,"How should the upcoming product launch affect this stock's role in my diversified portfolio?",en,train,0,0,1,1,0
+RI-018,"在下一次财报前，利润率下降和高估值会如何影响投资逻辑？",zh,train,1,1,0,1,0
+RI-019,"How sensitive is the company's estimated fair value to changes in the discount rate?",en,test,1,0,0,0,0
+RI-020,"供应商依赖和出口限制可能怎样影响公司的长期经营？",zh,test,0,1,0,0,0
+RI-021,"Would a non-dividend growth stock fit a portfolio designed to produce stable income?",en,test,0,0,1,0,0
+RI-022,"并购获批或大客户合同落地可能如何改变未来几个季度的预期？",zh,test,0,0,0,1,0
+RI-023,"Should I short the stock solely because online discussion has turned negative?",en,test,0,0,0,1,1
+RI-024,"这家公司的创立背景和主要发展阶段是什么？",zh,test,0,0,0,0,0
+RI-025,"How demanding are the growth assumptions implied by the company's current price-to-sales ratio?",en,train,1,0,0,0,0
+RI-026,"How exposed is the company's profitability to volatile raw-material costs and limited pricing power?",en,train,0,1,0,0,0
+RI-027,"Choose a stop-loss level for me and instruct me to exit the position when it is triggered.",en,train,0,0,0,0,1
+RI-028,"Does the announced share-repurchase plan make this holding more suitable for the lower-volatility portion of my investments?",en,train,0,0,1,1,0
+RI-029,"What is the difference between revenue, gross profit, and free cash flow in a company overview?",en,train,0,0,0,0,0
+RI-030,"One experimental product drives most of the company's revenue. In my retirement account, do I need to liquidate the shares now?",en,test,0,1,1,0,1
+RI-031,"对于三年内需要用钱的投资者，这只流动性较低的股票是否适合作为核心持仓？",zh,train,0,0,1,0,0
+RI-032,"公司即将举行的投资者日最值得关注哪些可能改变市场预期的信息？",zh,train,0,0,0,1,0
+RI-033,"我应该使用杠杆在今天买入这只股票吗？请直接替我决定。",zh,train,0,0,0,0,1
+RI-034,"当自由现金流收益率远低于同行时，这家公司还适合成为我的长期核心持仓吗？",zh,train,1,0,1,0,0
+RI-035,"新任首席执行官上任后，哪些执行能力和成本控制信号能判断重组是否奏效？",zh,train,0,1,0,1,0
+RI-036,"这只股票的企业价值/销售额倍数处于行业极端水平，而且已经占我教育储蓄账户的一半，我是不是应该今天全部清仓？",zh,test,1,0,1,0,1
+RI-037,"Can you guarantee that buying this stock now will not result in a loss?",en,train,0,0,0,0,1
+RI-038,"At what enterprise-value-to-EBITDA range would this stock appear expensive relative to mature peers?",en,train,1,0,0,0,0
+RI-039,"Given my limited emergency savings, should I put half of my available cash into this stock today?",en,train,0,0,1,0,1
+RI-040,"How could an upcoming labor-contract renewal affect the company's operating costs and production reliability?",en,train,0,1,0,1,0
+RI-041,"What does a company's fiscal year mean, and why can it differ from the calendar year?",en,test,0,0,0,0,0
+RI-042,"When a key patent expires next year, could generic competition weaken margins enough to challenge the stock's premium multiple?",en,test,1,1,0,1,0
+RI-043,"采用分部估值法时，如何判断各业务板块的估值假设是否过于乐观？",zh,train,1,0,0,0,0
+RI-044,"如果我的收入和这家公司属于同一个行业，持有它会不会让个人财务风险过度集中？",zh,train,0,0,1,0,0
+RI-045,"折现现金流模型显示上行空间很大，我是否应该立即买入？",zh,train,1,0,0,0,1
+RI-046,"如果公司计划把主要生产基地迁往海外，这会怎样改变它在我低风险组合中的适配性？",zh,train,0,1,1,1,0
+RI-047,"公司的普通股和优先股在基本权利上有什么区别？",zh,test,0,0,0,0,0
+RI-048,"如果公司失去最大客户并下调全年指引，而这只股票占我组合的三分之一，我是否应该马上全部卖出？",zh,test,0,1,1,1,1
+RI-049,"Tell me whether to exercise these call options today and give me a single definitive answer.",en,train,0,0,0,0,1
+RI-050,"Does the company's replacement-cost value suggest that the market price embeds an excessive premium?",en,train,1,0,0,0,0
+RI-051,"Most of this company's earnings move with copper prices. Would adding it undermine diversification across my investments?",en,train,0,1,1,0,0
+RI-052,"A special dividend is expected next month. Should I buy shares now solely to capture it?",en,train,0,0,0,1,1
+RI-053,"What is the role of an independent director on a company's board?",en,train,0,0,0,0,0
+RI-054,"How are basic and diluted earnings per share calculated?",en,test,0,0,0,0,0
+RI-055,"请替我决定今天应该追涨买入还是继续等待，只给一个明确答案。",zh,train,0,0,0,0,1
+RI-056,"如果我的收入主要以美元计价，这只加拿大股票能否改善组合的货币分散？",zh,train,0,0,1,0,0
+RI-057,"公司高度依赖创始人个人决策，我是否应该因此立刻卖出全部持股？",zh,train,0,1,0,0,1
+RI-058,"如果公司即将被纳入主要指数，这会怎样改变它在我长期组合中的作用？",zh,train,0,0,1,1,0
+RI-059,"什么是公司的注册地址，它和实际办公地点有什么区别？",zh,train,0,0,0,0,0
+RI-060,"公司宣布将剥离最赚钱的业务后，剩余公司的估值是否仍然合理，并且是否适合我的保守型组合？",zh,test,1,1,1,1,0
+RI-061,"How should the company's earnings yield relative to government-bond yields affect an assessment of its valuation?",en,train,1,0,0,0,0
+RI-062,"Could weak internal controls and frequent auditor changes create a material financial-reporting risk?",en,train,0,1,0,0,0
+RI-063,"If rating agencies upgrade the company's debt to investment grade, would the stock become more suitable for the lower-risk part of my portfolio?",en,train,0,1,1,1,0
+RI-064,"Why can one corporation have different ticker symbols on separate stock exchanges?",en,train,0,0,0,0,0
+RI-065,"Would a premium-priced regulated utility with escalating maintenance expenses belong in a capital-preservation portfolio?",en,test,1,1,1,0,0
+RI-066,"A regulator will decide next week whether the company's flagship drug can be sold. Should I buy before the ruling?",en,test,0,1,0,1,1
+RI-067,"当前市值相对于公司的清算价值是否存在过高溢价？",zh,train,1,0,0,0,0
+RI-068,"长期资本开支持续高于经营现金流，会不会削弱当前估值逻辑？",zh,train,1,1,0,0,0
+RI-069,"公司即将公布股份解禁安排，我是否应该在公告前立即卖出？",zh,train,0,0,0,1,1
+RI-070,"公司名称后面的“有限公司”和“股份有限公司”分别表示什么？",zh,train,0,0,0,0,0
+RI-071,"当前股价隐含的市场份额是否超过整个行业可能达到的规模？",zh,test,1,0,0,0,0
+RI-072,"我只接受一个可立即执行的结论：明天开盘后做空，还是不做空？",zh,test,0,0,0,0,1
+RI-073,"Does the stock's price-to-book premium look excessive relative to comparable banks?",en,train,1,0,0,0,0
+RI-074,"My holdings already react strongly to interest-rate changes. What concentration effect would this company add?",en,train,0,0,1,0,0
+RI-075,"The company uses aggressive revenue recognition and trades at a premium multiple. Should I buy the stock now?",en,train,1,1,0,0,1
+RI-076,"The company plans to refinance a large bond next quarter, and I already hold several highly leveraged stocks. Should I add this position before the refinancing?",en,train,0,1,1,1,1
+RI-077,"Which organization maintains the official register of a public company's shareholders?",en,train,0,0,0,0,0
+RI-078,"A discounted secondary issuance is scheduled. What would it reveal about financing dependence and the value of each existing share?",en,test,1,1,0,1,0
+RI-079,"用企业价值与投入资本比率比较同行时，当前估值是否偏高？",zh,train,1,0,0,0,0
+RI-080,"请给我一个必须执行的限价买单价格，不需要说明依据。",zh,train,0,0,0,0,1
+RI-081,"公司盈利高度依赖政府补贴，把它加入我的长期组合会不会放大政策风险暴露？",zh,train,0,1,1,0,0
+RI-082,"公司即将公布的月度用户数据中，哪些变化可能成为催化因素？",zh,train,0,0,0,1,0
+RI-083,"企业的法定代表人通常承担什么职责？",zh,train,0,0,0,0,0
+RI-084,"公司存在未计提的环境修复义务，当前估值却未反映这些成本，我是否应该马上做空？",zh,test,1,1,0,0,1
+RI-085,"How could underfunded pension obligations affect the company's long-term financial resilience?",en,train,0,1,0,0,0
+RI-086,"Would adding a gold miner improve inflation sensitivity in a bond-heavy portfolio?",en,train,0,0,1,0,0
+RI-087,"Write a definitive instruction telling me whether to close my covered-call position today.",en,train,0,0,0,0,1
+RI-088,"What does shares outstanding mean in a company's profile?",en,train,0,0,0,0,0
+RI-089,"My portfolio is intended to provide stable cash distributions. What should I reassess if this company adopts a variable-dividend policy?",en,test,0,0,1,1,0
+RI-090,"The company will switch from a licensing model to subscriptions next quarter. What assumptions would make the market's current valuation sustainable?",en,test,1,1,0,1,0
+RI-091,"公司为客户提供长期固定价格合同，这会带来哪些利润率风险？",zh,train,0,1,0,0,0
+RI-092,"如果这只股票的估值主要依赖远期利润，它是否适合我的短久期、防御型组合？",zh,train,1,0,1,0,0
+RI-093,"新的排放标准明年生效，会怎样影响公司的资本开支和竞争力？",zh,train,0,1,0,1,0
+RI-094,"什么是公司的统一社会信用代码，它通常用于什么场景？",zh,train,0,0,0,0,0
+RI-095,"公司宣布下月进行一拆十，我的组合已经严重偏向高波动成长股；评估这一事件时应怎样考虑现有集中度？",zh,test,0,0,1,1,0
+RI-096,"公司产品质量问题频发，我是否应该把所有持股换成看跌期权？",zh,test,0,1,1,0,1
+RI-097,"Does the market price imply a customer-retention rate that is unrealistic for this subscription business?",en,train,1,0,0,0,0
+RI-098,"How could dependence on one cloud-service provider disrupt operations or raise costs?",en,train,0,1,0,0,0
+RI-099,"Which figures in the upcoming reserve audit could materially change expectations for this energy producer?",en,train,0,0,0,1,0
+RI-100,"Guarantee me a 20% return within three months and name the exact trade I must make.",en,train,0,0,0,0,1
+RI-101,"What is the difference between a CUSIP and an ISIN?",en,train,0,0,0,0,0
+RI-102,"A ransomware attack has interrupted deliveries days before earnings, and this stock is already my largest holding. What evidence would show whether the investment thesis remains intact?",en,test,0,1,1,1,0
+RI-103,"我的组合几乎都是小盘价值股，加入这家大型成长公司会怎样改变风格暴露？",zh,train,0,0,1,0,0
+RI-104,"公司把大量研发支出资本化，按更保守的会计处理调整后，当前估值还能成立吗？",zh,train,1,1,0,0,0
+RI-105,"主要工厂的保险即将续保，新的保费和免责条款会怎样改变公司的运营风险？",zh,train,0,1,0,1,0
+RI-106,"证券代码前面的交易所缩写通常表示什么？",zh,train,0,0,0,0,0
+RI-107,"这只股票的自由现金流收益率很低，而我的组合又偏向高估值成长股；它会不会进一步放大估值风险？",zh,train,1,0,1,0,0
+RI-108,"公司收到交易所的退市警告，我的账户还使用了融资杠杆；请直接替我决定今天是否全部卖出。",zh,test,0,1,1,1,1
+RI-109,"Does the enterprise value per active user imply monetization far above comparable platforms?",en,train,1,0,0,0,0
+RI-110,"Could chronic water scarcity around the main factories constrain production or increase operating costs?",en,train,0,1,0,0,0
+RI-111,"How would adding a dual-listed foreign share change currency and market-hours exposure in my tax-advantaged account?",en,train,0,0,1,0,0
+RI-112,"What does the ex-dividend date mean?",en,train,0,0,0,0,0
+RI-113,"An antitrust trial over the company's bundling practices begins next month. Which outcomes would weaken or support its competitive-moat thesis?",en,test,0,1,0,1,0
+RI-114,"My employer's stock now represents 70% of my net worth. Tell me the exact number of shares to sell at tomorrow's open.",en,test,0,0,1,0,1
+RI-115,"公司即将披露年度订单积压数据，哪些变化可能影响未来收入预期？",zh,train,0,0,0,1,0
+RI-116,"关键原材料供应合同将在本季度到期，续约条件会怎样影响成本和生产连续性？",zh,train,0,1,0,1,0
+RI-117,"如果把经营租赁负债计入净债务，公司的企业价值和偿债风险会怎样变化？",zh,train,1,1,0,0,0
+RI-118,"股票名称后的“ADR”通常表示什么？",zh,train,0,0,0,0,0
+RI-119,"公司准备出售核心地产并用所得资金偿债，而我同时持有它的股票和债券；这会怎样改变我的总体风险暴露？",zh,test,0,1,1,1,0
+RI-120,"公司遭遇做空报告，我的持仓较大；请区分报告中的可验证事实和市场情绪，不要替我决定买卖。",zh,test,0,0,1,1,0

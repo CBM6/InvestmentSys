@@ -1,10 +1,13 @@
 import os
 from dotenv import load_dotenv
-from openai import OpenAI
 from investment.source_retrieval import(
     format_sources_for_prompt,
     format_sources_section,
 )
+
+
+# Keep the model name in one place so the app and evaluation results agree.
+OPENAI_MODEL = "gpt-4.1-mini"
 
 
 def generateAiReport(prompt,prompts, risk, currentPos, cash, sources):
@@ -18,8 +21,6 @@ def generateAiReport(prompt,prompts, risk, currentPos, cash, sources):
         Please create a local .env file with your API key:
         OPENAI_API_KEY=your_api_key_here
         This key is only for local development. Do not commit it to git"""
-    #Create an openai client using the local api key
-    client = OpenAI(api_key=api_key)
     source_context = format_sources_for_prompt(sources)
     # Build the prompt that tells the model exactly what report shape we expect.
     user_prompt = f"""
@@ -75,9 +76,15 @@ Source and citation rules:
 """
 
     try:
+        # Import the SDK in the worker thread so a slow import cannot block
+        # QApplication from creating and showing the main window.
+        from openai import OpenAI
+
+        # Create an OpenAI client using the local API key.
+        client = OpenAI(api_key=api_key)
         # Send the request to OpenAI and get the generated report text.
         response = client.responses.create(
-            model="gpt-4.1-mini",
+            model=OPENAI_MODEL,
             input=user_prompt,
         )
     except Exception as error:
